@@ -112,6 +112,12 @@ body {
     margin-top: 30px;
 }
 
+.social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .social-icons a {
     color: #fff;
     font-size: 24px;
