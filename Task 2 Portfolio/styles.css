@@ -19,7 +19,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #03033c, #010134, #00001b, #000047);
+  background: linear-gradient(to right, #800000, #4d0404, #1b0001, #5e0606);
   background-size: 400% 400%;
   animation: changeGradient 5s ease infinite;
 }
