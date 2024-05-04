@@ -1,0 +1,94 @@
+/* Custom CSS */
+body {
+    background-image: url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h1 {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
+
+.card {
+    border-radius: 16px !important;
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 30px 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
