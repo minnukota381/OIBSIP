@@ -251,10 +251,10 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #013220;
+  color: #006641 !important;
   text-shadow: 2px 2px 4px rgb(255, 255, 255);
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 900;
   position: relative;
   padding-bottom: 8px;
 }
@@ -264,7 +264,7 @@ section .title ::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #05472A;
+  background: #007341;
   left: 0;
   bottom: 0;
 }
@@ -299,7 +299,9 @@ section p{
 }
 .about-topic{
   font-size: 1.5rem;
-  color: #228B22;
+  font-weight: 900;
+  color: #014201;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
   margin-top: 10px;
 }
 .about-p{
@@ -347,8 +349,9 @@ section p{
 /* Projects section */
 .projects-details .card {
   transition: all 0.3s ease;
-  background-color: transparent; /* Make the background transparent */
-  border: none; /* Remove the border */
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
   margin-bottom: 20px;
   border-radius: 25px;
   display: flex;
@@ -356,13 +359,15 @@ section p{
   align-items: center;
   justify-content: center;
   padding: 25px;
+  box-shadow: 0px 4px 8px rgba(195, 191, 191, 0.5);
 }
 
 .projects-details .card:hover {
   transform: translateY(-5px);
-  background-color: transparent; /* Make the background transparent on hover */
-  box-shadow: none; /* Remove the box shadow on hover */
+  background-color: transparent;
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.8); 
 }
+
 
 .projects img{
   max-width: 50%;
@@ -398,11 +403,21 @@ section p{
 }
 
 .contact-details {
-  background-color: #000;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
+
+/* Apply backdrop filter for browsers that support it */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .contact-details {
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-color: rgba(255, 255, 255, 0.2); /* Fallback for browsers that support backdrop-filter */
+  }
+}
+
 
 .contact .form-group {
   margin-bottom: 20px;
@@ -418,9 +433,9 @@ section p{
 .contact form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid transparent;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: transparent;
   color: #ffffff;
 }
 
@@ -430,16 +445,16 @@ section p{
 
 .contact form button {
   padding: 10px 20px;
-  background-color: #3cbe0d;
+  background-color: #144a00;
   border: none;
   border-radius: 5px;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact form button:hover {
-  background-color: #086b12;
+  background-color: #003305;
 }
 
 .contact .contact-info h3,
@@ -449,7 +464,7 @@ section p{
 }
 
 .btn-primary {
-  background-color: #009e00 !important;
+  background-color: #004f00 !important;
   border-color: #fff !important;
 }
 
