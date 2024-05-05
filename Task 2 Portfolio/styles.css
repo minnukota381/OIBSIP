@@ -347,7 +347,8 @@ section p{
 /* Projects section */
 .projects-details .card {
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
   margin-bottom: 20px;
   border-radius: 25px;
   display: flex;
@@ -359,8 +360,10 @@ section p{
 
 .projects-details .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+  background-color: transparent; /* Make the background transparent on hover */
+  box-shadow: none; /* Remove the box shadow on hover */
 }
+
 .projects img{
   max-width: 50%;
   height: auto;
