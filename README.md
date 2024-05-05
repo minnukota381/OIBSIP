@@ -15,4 +15,3 @@ This repository contains my solutions to the tasks assigned during the web devel
 ### Task 3 Temperature Converter
 
 ![Task 3 Screenshot](Assets/temp.png)
-
