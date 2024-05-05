@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Thermometer">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Temperature Converter</h1>
-            <p class="lead">This is a simple temperature converter.</p>
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1 class="text-center text-white thermometer-font">Temperature Converter</h1>
+      <div class="converter-card mx-auto">
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="input-temp" class="form-label text-white thermometer-font">Enter temperature:</label>
+            <input type="number" class="form-control" id="input-temp" placeholder="0">
+          </div>
+          <div class="mb-3">
+            <label for="input-scale" class="form-label text-white thermometer-font">Select scale:</label>
+            <select class="form-select" id="input-scale">
+              <option value="celsius">Celsius</option>
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+          </div>
+          <button id="convert-btn" class="btn btn-primary thermometer-font">Convert</button>
         </div>
-        <div class="input-group mb-3">
-            <input type="number" id="celsius" class="form-control" placeholder="Celsius">
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card bg-transparent text-center">
+            <div class="card-body">
+              <h5 class="card-title text-white thermometer-font"><i class="fas fa-thermometer-half fa-2x"></i> Celsius</h5>
+              <p class="card-text text-white thermometer-font" id="celsius-output">0 °C</p>
+            </div>
+          </div>
         </div>
-        <div class="input-group mb-3">
-            <input type="number" id="fahrenheit" class="form-control" placeholder="Fahrenheit">
+        <div class="col-md-4">
+          <div class="card bg-transparent text-center">
+            <div class="card-body">
+              <h5 class="card-title text-white thermometer-font"><i class="fas fa-thermometer-full fa-2x"></i> Fahrenheit</h5>
+              <p class="card-text text-white thermometer-font" id="fahrenheit-output">32 °F</p>
+            </div>
+          </div>
         </div>
-        <div class="input-group mb-3">
-            <input type="number" id="kelvin" class="form-control" placeholder="Kelvin">
+        <div class="col-md-4">
+          <div class="card bg-transparent text-center">
+            <div class="card-body">
+              <h5 class="card-title text-white thermometer-font"><i class="fas fa-temperature-low fa-2x"></i> Kelvin</h5>
+              <p class="card-text text-white thermometer-font" id="kelvin-output">273.15 K</p>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-primary" onclick="convert()">Convert</button>
+      </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
