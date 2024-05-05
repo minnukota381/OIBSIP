@@ -82,7 +82,6 @@ body {
   background-color: #ffffff;
 }
 
-
 nav.sticky {
   background: #ffffff;
   padding: 13px 0;
@@ -147,8 +146,6 @@ nav .navbar {
   width: 30px;
   height: 30px;
 }
-
-
 
 /* home section styling */
 .home {
@@ -278,7 +275,6 @@ section p{
   text-align: justify;
 }
 
-
 /* about section */
 .about .img-fluid {
   width: 200px;
@@ -368,7 +364,6 @@ section p{
   box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.8); 
 }
 
-
 .projects img{
   max-width: 50%;
   height: auto;
@@ -403,18 +398,16 @@ section p{
 }
 
 .contact-details {
-  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
-  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
-/* Apply backdrop filter for browsers that support it */
 @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
   .contact-details {
-    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    background-color: rgba(0, 0, 0, 0.2); /* Fallback for browsers that support backdrop-filter */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
