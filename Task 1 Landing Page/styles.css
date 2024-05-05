@@ -24,8 +24,9 @@ body {
 /* Existing CSS */
 .nav-link {
     font-family: 'EB Garamond', serif; /* Use EB Garamond font */
-    font-size: 1.2rem;
+    font-size: 15px !important;
     font-weight: bold; /* Make nav links bold */
+    text-transform: uppercase;
     color: #fff !important;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: color 0.3s ease;
