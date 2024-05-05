@@ -437,10 +437,20 @@ section p{
 .contact form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid transparent;
+  border: 1px solid white;
   border-radius: 5px;
   background-color: transparent;
   color: #ffffff;
+  transition: border-color 0.3s ease;
+  &:focus {
+    border-color: #ffffff;
+  }
+  &::placeholder {
+    color: #ffffff;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
 .contact form textarea {
@@ -449,9 +459,11 @@ section p{
 
 .contact form button {
   padding: 10px 20px;
-  background-color: #144a00;
+  background-color: #175800;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
   color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -489,7 +501,6 @@ footer {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-
 
 footer .text span a:hover {
   text-decoration: underline;
