@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    background-image: url('https://images.unsplash.com/photo-1682547094948-1d764fc412ce?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTJ8MTE2NDk0MzJ8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,9 +31,6 @@ body {
     transition: color 0.3s ease;
     position: relative;
 }
-
-/* Remaining CSS remains unchanged */
-
 
 .nav-link:hover {
     color: #ff6600 !important;
