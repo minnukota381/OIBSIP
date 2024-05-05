@@ -12,7 +12,7 @@
 }
 
 body {
-  background: url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg?cs=srgb&dl=pexels-andrew-3178786.jpg&fm=jpg') fixed;
+  background: url('https://www.hdwallpapers.in/download/leaves_plant_branches_dark_background_hd_dark-HD.jpg') fixed;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
@@ -34,7 +34,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #013220;
 }
-
 
 .navbar {
   position: fixed;
@@ -67,11 +66,12 @@ body {
   transition: all 0.3s ease;
   background-color: inherit;
   margin-left: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
   &:hover {
-    color: #0080ff;
+    color: #05472A;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
   }
 }
-
 .nav {
   position: fixed;
   width: 100%;
@@ -117,8 +117,13 @@ nav .navbar {
   font-weight: 500;
   transition: color 0.3s ease;
   margin-left: 10px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
   &:hover {
-    color: #00aaff;
+    color: #05472A;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
   }
 }
 
@@ -241,11 +246,13 @@ section .content{
 section .title{
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
   align-items: center;
   margin-bottom: 40px;
 }
 section .title span{
-  color: #ffaa00;
+  color: #013220;
+  text-shadow: 2px 2px 4px rgb(255, 255, 255);
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -292,7 +299,7 @@ section p{
 }
 .about-topic{
   font-size: 1.5rem;
-  color: #ff0000;
+  color: #228B22;
   margin-top: 10px;
 }
 .about-p{
@@ -451,7 +458,6 @@ section p{
 /* Footer */
 
 footer {
-  background: #1b035d;
   padding: 40px 0;
   display: flex;
   align-items: center;
