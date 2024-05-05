@@ -223,6 +223,7 @@ nav .navbar {
 }
 .home .social-links a:hover i {
   transform: scale(1.1);
+  color: #007341;
 }
 
 /* About Section */
