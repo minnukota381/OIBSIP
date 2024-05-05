@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temperature Converter</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3094/3094945.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Thermometer">
@@ -15,19 +16,15 @@
       <h1 class="text-center text-white thermometer-font">Temperature Converter</h1>
       <div class="converter-card mx-auto">
         <div class="card-body">
-          <div class="mb-3">
-            <label for="input-temp" class="form-label text-white thermometer-font">Enter temperature:</label>
-            <input type="number" class="form-control" id="input-temp" placeholder="0">
-          </div>
-          <div class="mb-3">
-            <label for="input-scale" class="form-label text-white thermometer-font">Select scale:</label>
-            <select class="form-select" id="input-scale">
-              <option value="celsius">Celsius</option>
-              <option value="fahrenheit">Fahrenheit</option>
-              <option value="kelvin">Kelvin</option>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control rounded-pill" id="input-temp" placeholder="Enter temperature">
+            <select class="form-select rounded-pill ms-3" id="input-scale">
+              <option value="celsius">°C</option>
+              <option value="fahrenheit">°F</option>
+              <option value="kelvin">K</option>
             </select>
           </div>
-          <button id="convert-btn" class="btn btn-primary thermometer-font">Convert</button>
+          <button id="convert-btn" class="btn btn-primary rounded-pill thermometer-font px-4">Convert</button>
         </div>
       </div>
       <div class="row mt-4">
@@ -35,7 +32,7 @@
           <div class="card bg-transparent text-center">
             <div class="card-body">
               <h5 class="card-title text-white thermometer-font"><i class="fas fa-thermometer-half fa-2x"></i> Celsius</h5>
-              <p class="card-text text-white thermometer-font" id="celsius-output">0 °C</p>
+              <p class="card-text text-white thermometer-font display-4" id="celsius-output">0 °C</p>
             </div>
           </div>
         </div>
@@ -43,7 +40,7 @@
           <div class="card bg-transparent text-center">
             <div class="card-body">
               <h5 class="card-title text-white thermometer-font"><i class="fas fa-thermometer-full fa-2x"></i> Fahrenheit</h5>
-              <p class="card-text text-white thermometer-font" id="fahrenheit-output">32 °F</p>
+              <p class="card-text text-white thermometer-font display-4" id="fahrenheit-output">32 °F</p>
             </div>
           </div>
         </div>
@@ -51,7 +48,7 @@
           <div class="card bg-transparent text-center">
             <div class="card-body">
               <h5 class="card-title text-white thermometer-font"><i class="fas fa-temperature-low fa-2x"></i> Kelvin</h5>
-              <p class="card-text text-white thermometer-font" id="kelvin-output">273.15 K</p>
+              <p class="card-text text-white thermometer-font display-4" id="kelvin-output">273.15 K</p>
             </div>
           </div>
         </div>

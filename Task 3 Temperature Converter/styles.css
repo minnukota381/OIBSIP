@@ -1,49 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-  }
-  
-  .hero-section {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: background-image 1s ease-in-out;
-  }
-  
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .converter-card {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: transparent;
-  }
-  
-  .card.bg-transparent {
-    background-color: transparent !important;
-    border: none;
-  }
-  
-  .thermometer-font {
-    font-family: 'Thermometer', sans-serif;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.converter-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.card.bg-transparent {
+  background-color: transparent !important;
+  border: none;
+}
+
+.thermometer-font {
+  font-family: 'Thermometer', sans-serif;
+}
+
+.input-group .form-control,
+.input-group .form-select {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-primary {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.btn-primary:hover {
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+}
