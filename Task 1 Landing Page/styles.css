@@ -6,12 +6,14 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    padding-top: 80px; /* Add padding to account for fixed navbar */
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem 0;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
@@ -26,10 +28,22 @@ body {
     font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: color 0.3s ease;
+    position: relative; /* Add position relative for underline */
 }
 
-.nav-link:hover {
-    color: #ff6600 !important;
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
 }
 
 .section {
