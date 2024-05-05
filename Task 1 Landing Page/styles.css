@@ -21,12 +21,19 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Existing CSS */
 .nav-link {
+    font-family: 'EB Garamond', serif; /* Use EB Garamond font */
+    font-size: 1.2rem;
+    font-weight: bold; /* Make nav links bold */
     color: #fff !important;
-    font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: color 0.3s ease;
+    position: relative;
 }
+
+/* Remaining CSS remains unchanged */
+
 
 .nav-link:hover {
     color: #ff6600 !important;
@@ -119,29 +126,17 @@ body {
 
 .card-text {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-/* Existing CSS */
-.contact-section {
-    background-color: rgba(255, 255, 255, 0.9);
+}/* Existing CSS */
+.contact-card {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card .card-body {
     padding: 40px;
 }
 
-.contact-section h1,
-.contact-section p {
-    color: #000;
-}
-
-.contact-section form {
-    color: #000;
-}
-
-.contact-section label {
-    color: #000;
-}
-
-.contact-section .btn-primary {
+.contact-card .btn-primary {
     background-color: #ff6600;
     border-color: #ff6600;
     font-weight: 700;
@@ -149,7 +144,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.contact-section .btn-primary:hover {
+.contact-card .btn-primary:hover {
     background-color: #e65c00;
     border-color: #e65c00;
     transform: translateY(-3px);
