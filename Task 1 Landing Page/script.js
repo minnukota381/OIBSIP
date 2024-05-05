@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('a.nav-link, a.smooth-scroll').on('click', function(event) {
+    $('.navbar-nav a.nav-link, .navbar-brand, a.smooth-scroll').on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
