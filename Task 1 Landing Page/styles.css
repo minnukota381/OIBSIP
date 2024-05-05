@@ -7,19 +7,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #2980b9;
+    border-radius: 5px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background: #1c5f8a;
+}
 .navbar {
     background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 1rem 0;
@@ -181,3 +184,18 @@ body {
 .social-icons a:hover {
     color: #ff6600;
 }
+@media (max-width: 767px) {
+    .navbar {
+      padding: 0.5rem 1rem; /* Reduce padding on small screens */
+    }
+  
+    .navbar-brand {
+      font-size: 1.4rem; /* Reduce font size */
+      margin-right: auto; /* Push brand to the left */
+    }
+  
+    .nav-link {
+      font-size: 1rem !important; /* Reduce font size */
+      padding: 0.5rem 1rem; /* Add some padding */
+    }
+  }
