@@ -403,10 +403,10 @@ section p{
 }
 
 .contact-details {
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
 /* Apply backdrop filter for browsers that support it */
@@ -414,7 +414,7 @@ section p{
   .contact-details {
     backdrop-filter: blur(10px); /* Apply a blur effect to the background */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
-    background-color: rgba(255, 255, 255, 0.2); /* Fallback for browsers that support backdrop-filter */
+    background-color: rgba(0, 0, 0, 0.2); /* Fallback for browsers that support backdrop-filter */
   }
 }
 
