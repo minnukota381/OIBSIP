@@ -120,6 +120,41 @@ body {
 .card-text {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+/* Existing CSS */
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+
+.contact-section h1,
+.contact-section p {
+    color: #000;
+}
+
+.contact-section form {
+    color: #000;
+}
+
+.contact-section label {
+    color: #000;
+}
+
+.contact-section .btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 
 .footer {
     background-color: rgba(0, 0, 0, 0.8);
