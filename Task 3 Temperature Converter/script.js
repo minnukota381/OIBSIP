@@ -7,17 +7,52 @@ const kelvinOutput = document.getElementById('kelvin-output');
 const heroSection = document.querySelector('.hero-section');
 
 const imageUrls = [
-  'https://source.unsplash.com/1600x900/?nature',
-  'https://source.unsplash.com/1600x900/?landscape',
-  'https://source.unsplash.com/1600x900/?mountain',
-  'https://source.unsplash.com/1600x900/?beach',
-  'https://source.unsplash.com/1600x900/?forest',
-  'https://source.unsplash.com/1600x900/?sunset',
-  'https://source.unsplash.com/1600x900/?ocean',
-  'https://source.unsplash.com/1600x900/?river',
-  'https://source.unsplash.com/1600x900/?lake',
-  'https://source.unsplash.com/1600x900/?waterfall'
+  'Assets/1.jpg',
+  'Assets/2.jpg',
+  'Assets/3.jpg',
+  'Assets/4.jpg',
+  'Assets/5.jpg',
+  'Assets/6.jpg',
+  'Assets/7.jpg',
+  'Assets/8.jpg',
+  'Assets/9.jpg',
+  'Assets/10.jpg',
+  'Assets/11.jpg',
+  'Assets/12.jpg',
+  'Assets/13.jpg',
+  'Assets/14.jpg',
+  'Assets/15.jpg',
+  'Assets/16.jpg',
+  'Assets/17.jpg',
+  'Assets/18.jpg',
+  'Assets/19.jpg',
+  'Assets/20.jpg',
+  'Assets/21.jpg',
+  'Assets/22.jpg',
+  'Assets/23.jpg',
+  'Assets/24.jpg',
+  'Assets/25.jpg',
 ];
+
+const preloadImages = () => {
+  const promises = [];
+  for (let i = 0; i < imageUrls.length; i++) {
+    const img = new Image();
+    const promise = new Promise((resolve) => {
+      img.onload = resolve;
+    });
+    img.src = imageUrls[i];
+    promises.push(promise);
+  }
+  return Promise.all(promises);
+};
+
+window.onload = () => {
+  preloadImages().then(() => {
+    console.log('All images preloaded successfully!');
+  });
+};
+
 function changeBackgroundImage() {
   const randomIndex = Math.floor(Math.random() * imageUrls.length);
   const imageUrl = imageUrls[randomIndex];
@@ -30,7 +65,7 @@ function changeBackgroundImage() {
   }, 5000);
 }
 
-setInterval(changeBackgroundImage, 5000);
+setInterval(changeBackgroundImage, 8000);
 
 function convertTemperature() {
   const temp = parseFloat(inputTemp.value);
