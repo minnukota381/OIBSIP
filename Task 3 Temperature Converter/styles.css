@@ -1,64 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-}
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
 
-.hero-section {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: background-image 1s ease-in-out;
-}
+  .thermometer-font{
+    font-weight: 500;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .converter-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+   
+  .input-group .form-control,
+  .input-group .form-select {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+  }
+  
+  .thermometer-font {
+    font-weight: 500;
+  }
+  
+  .card.bg-transparent {
+    background-color: transparent !important;
+    border: none;
+  }
+  
+  .card-title,
+  .card-text {
+    margin-bottom: 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-.converter-card {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: transparent;
-}
-
-.card.bg-transparent {
-  background-color: transparent !important;
-  border: none;
-}
-
-.thermometer-font {
-  font-family: 'Thermometer', sans-serif;
-}
-
-.input-group .form-control,
-.input-group .form-select {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.btn-primary {
-  background-color: #ff6b6b;
-  border-color: #ff6b6b;
-}
-
-.btn-primary:hover {
-  background-color: #ff4d4d;
-  border-color: #ff4d4d;
-}

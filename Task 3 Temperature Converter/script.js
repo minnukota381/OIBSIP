@@ -18,10 +18,16 @@ const imageUrls = [
   'https://source.unsplash.com/1600x900/?lake',
   'https://source.unsplash.com/1600x900/?waterfall'
 ];
-
 function changeBackgroundImage() {
   const randomIndex = Math.floor(Math.random() * imageUrls.length);
-  heroSection.style.backgroundImage = `url(${imageUrls[randomIndex]})`;
+  const imageUrl = imageUrls[randomIndex];
+  heroSection.style.backgroundImage = `url(${imageUrl})`;
+
+  heroSection.classList.add('fade-in');
+
+  setTimeout(() => {
+    heroSection.classList.remove('fade-in');
+  }, 5000);
 }
 
 setInterval(changeBackgroundImage, 5000);
