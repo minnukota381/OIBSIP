@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,19 +10,11 @@
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
-@keyframes changeGradient {
-  0% { background-position: 0% 0%; }
-  17% { background-position: 50% 0%; }
-  33% { background-position: 50% 50%; }
-  50% { background-position: 50% 100%; }
-  67% { background-position: 0% 100%; }
-  100% { background-position: 0% 0%; }
-}
 
 body {
-  background: linear-gradient(to right, #800000, #4d0404, #1b0001, #5e0606);
-  background-size: 400% 400%;
-  animation: changeGradient 5s ease infinite;
+  background: url('https://images.unsplash.com/photo-1566031994720-cd39b144bc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE5fHx8ZW58MHx8fHx8&w=1000&q=80') fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Scrollbar styles */
@@ -33,13 +26,13 @@ body {
     background: #d6d2c9;
 }
 ::-webkit-scrollbar-thumb {
-    background: #0e6fdd;
+    background: #013220;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #3a0fc9;
+    background: #013220;
 }
 
 
@@ -69,14 +62,13 @@ body {
 .navbar .navbar-brand {
   font-weight: 700;
   font-size: 40px;
-  color: #001aff;
-  font-family: "Allura", cursive;
+  color: #ffffff;
   padding: 8px 0;
   transition: all 0.3s ease;
   background-color: inherit;
   margin-left: 20px;
   &:hover {
-    color: #ffffff;
+    color: #0080ff;
   }
 }
 
@@ -113,7 +105,7 @@ nav .navbar {
 
 .navbar .nav-item .nav-link{
   position: relative;
-  color: #ff8c00;
+  color: #ffffff;
   display: inline-block;
   line-height: 1.5;
   text-align: center;
@@ -126,7 +118,7 @@ nav .navbar {
   transition: color 0.3s ease;
   margin-left: 10px;
   &:hover {
-    color: #ffffff;
+    color: #00aaff;
   }
 }
 
@@ -172,17 +164,17 @@ nav .navbar {
 }
 .home .text-one{
   font-size: 25px;
-  color:rgb(255, 128, 0);
+  color:rgb(255, 255, 255);
 }
 .home .text-two{
-  color:rgb(18, 18, 212);
+  color:rgb(255, 255, 255);
   text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
   font-size: 50px;
   font-weight: 600;
   margin-left:-3px;
 }
 .home .text-three{
-  color: rgb(11, 133, 240);
+  color: rgb(255, 255, 255);
   font-size:50px;
   font-weight: 600;
   margin-left: 3px;
@@ -192,7 +184,7 @@ nav .navbar {
   white-space: pre;
 }
 .home .pre-style:hover{
-  color: #0a00c0;
+  color: #117c00;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
@@ -265,7 +257,7 @@ section .title ::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #a86b00;
+  background: #05472A;
   left: 0;
   bottom: 0;
 }
