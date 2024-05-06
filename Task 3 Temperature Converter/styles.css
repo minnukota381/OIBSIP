@@ -67,10 +67,6 @@ body {
     border-color: #ff4d4d;
   }
   
-  .thermometer-font {
-    font-weight: 500;
-  }
-  
   .card.bg-transparent {
     background-color: transparent !important;
     border: none;

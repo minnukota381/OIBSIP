@@ -36,12 +36,10 @@ const imageUrls = [
 
 const preloadImages = () => {
   const promises = [];
-  for (let i = 0; i < imageUrls.length; i++) {
+  for (const imageUrl of imageUrls) {
     const img = new Image();
-    const promise = new Promise((resolve) => {
-      img.onload = resolve;
-    });
-    img.src = imageUrls[i];
+    const promise = new Promise(resolve => img.onload = resolve);
+    img.src = imageUrl;
     promises.push(promise);
   }
   return Promise.all(promises);
