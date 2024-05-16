@@ -1,4 +1,4 @@
-# OIBSIP Web Development Intenrship Tasks
+# OIBSIP Web Development Internship Tasks
 
 This repository contains my solutions to the tasks assigned during the web development internship at Oasis Infobyte.
 
